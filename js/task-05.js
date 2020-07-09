@@ -16,29 +16,28 @@ if (message === null) {
 } else {
   switch (message.toUpperCase()) {
     case china: {
-      alert(`'Доставка в ${china} будет стоить ${creditChina} кредитов'`);
+      message = `'Доставка в ${china} будет стоить ${creditChina} кредитов'`;
       break;
     }
     case chile: {
-      alert(`'Доставка в ${chile} будет стоить ${creditChile} кредитов'`);
+      message = `'Доставка в ${chile} будет стоить ${creditChile} кредитов'`;
       break;
     }
     case australia: {
-      alert(
-        `'Доставка в ${australia} будет стоить ${creditAustralia} кредитов'`
-      );
+      message = `'Доставка в ${australia} будет стоить ${creditAustralia} кредитов'`;
       break;
     }
     case india: {
-      alert(`'Доставка в ${india} будет стоить ${creditIndia} кредитов'`);
+      message = `'Доставка в ${india} будет стоить ${creditIndia} кредитов'`;
       break;
     }
     case jamaica: {
-      alert(`'Доставка в ${jamaica} будет стоить ${creditJamaica} кредитов'`);
+      message = `'Доставка в ${jamaica} будет стоить ${creditJamaica} кредитов'`;
       break;
     }
     default: {
-      alert("В вашей стране доставка не доступна");
+      message = "В вашей стране доставка не доступна";
     }
   }
 }
+alert(message);
