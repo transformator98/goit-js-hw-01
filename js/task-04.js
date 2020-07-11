@@ -10,7 +10,7 @@ if (quantityDroid === null) {
 } else if (Number.isNaN(Number(quantityDroid)) === true) {
   massage = "Вы ввели не верное значение, введите кол-во цыфрами";
 } else {
-  let totalPrice = pricePerDroid * quantityDroid;
+  totalPrice = pricePerDroid * quantityDroid;
   console.log(totalPrice);
   if (totalPrice > credits) {
     massage = "Недостаточно средств на счету!";
